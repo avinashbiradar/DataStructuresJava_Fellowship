@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-03T17:56:14" hostname="DESKTOP-PB86ROL" time="0.006">
+<testsuite name="MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-03T18:02:12" hostname="DESKTOP-PB86ROL" time="0.009">
   <properties/>
-  <testcase name="given3NumbersShouldAddElementAndDeleteAtAnyIndexInLinkedList" classname="MyLinkedListTest" time="0.006"/>
-  <system-out><![CDATA[My Nodes: 56->30->70
+  <testcase name="given4NumbersShouldSortedInASECorderInLinkedList" classname="MyLinkedListTest" time="0.009"/>
+  <system-out><![CDATA[My Nodes: 30->40->56->70
+4
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

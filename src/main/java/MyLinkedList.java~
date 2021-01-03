@@ -116,7 +116,7 @@ public class MyLinkedList<K> {
             prevNode.setNext(newNode);
         }
         newNode.setNext(currentNode);
-    }
+
         public void printMyNodes() {
         StringBuffer myNodes=new StringBuffer("My Nodes: ");
         INode tempNode=head;
