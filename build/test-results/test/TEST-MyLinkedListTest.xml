@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-03T17:32:41" hostname="DESKTOP-PB86ROL" time="0.006">
+<testsuite name="MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-03T17:43:59" hostname="DESKTOP-PB86ROL" time="0.009">
   <properties/>
-  <testcase name="given3NumbersShouldDeleteTailOfLinkedList" classname="MyLinkedListTest" time="0.006"/>
+  <testcase name="given3NumbersShouldSerachElementInLinkedList" classname="MyLinkedListTest" time="0.009"/>
   <system-out><![CDATA[My Nodes: 56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
