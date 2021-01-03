@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-03T16:56:08" hostname="DESKTOP-PB86ROL" time="0.006">
+  <properties/>
+  <testcase name="given3NumbersShouldPassLinkedListTest" classname="MyLinkedListTest" time="0.006"/>
+  <system-out><![CDATA[MyNode{Key=56}->MyNode{Key=30}->MyNode{Key=70}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
