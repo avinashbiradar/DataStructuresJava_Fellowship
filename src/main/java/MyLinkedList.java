@@ -50,6 +50,22 @@ public class MyLinkedList<K> {
         this.head = head.getNext();
         return tempNode;
     }
+    //Method to delete last element
+    public INode popLast() throws NullPointerException {
+        if (this.head == null)
+            return null;
+        if (this.head.getNext().equals(null))
+            return null;
+        else {
+            INode tempNode = head;
+            while (!tempNode.getNext().equals(tail)) {
+                tempNode = tempNode.getNext();
+            }
+            INode tempLastNode = tempNode.getNext();
+            tempLastNode.setNext(null);
+            return tempLastNode;
+        }
+    }
     public void printMyNodes() {
         StringBuffer myNodes=new StringBuffer("My Nodes: ");
         INode tempNode=head;
