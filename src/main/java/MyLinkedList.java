@@ -1,10 +1,16 @@
 public class MyLinkedList<K> {
     public INode<K> head;
     public INode<K> tail;
+    public static int count;
+
+    public static int getCount() {
+        return count;
+    }
     public MyLinkedList() {
         this.head=head;
         this.tail=tail;
     }
+
     public void add(INode<K> newNode) {
         if(this.tail==null) {
             this.tail=newNode;
@@ -78,6 +84,22 @@ public class MyLinkedList<K> {
                 return tempNode;
         }
         return null;
+    }
+    //Method to delete an element at any index in Linked List
+    public INode deleteAtIndex(INode element) {
+        count--;
+        if (head.equals(element)) {
+            INode del = head;
+            head = head.getNext();
+            return del;
+        }
+        INode tempDeleteNode= head;
+        while (!tempDeleteNode.getNext().equals(element)) {
+            tempDeleteNode = tempDeleteNode.getNext();
+        }
+        INode tempNode = tempDeleteNode.getNext();
+        tempDeleteNode.setNext(tempDeleteNode.getNext().getNext());
+        return tempNode;
     }
     public void printMyNodes() {
         StringBuffer myNodes=new StringBuffer("My Nodes: ");
