@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyBinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-04T03:10:32" hostname="DESKTOP-PB86ROL" time="0.002">
+<testsuite name="MyBinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-04T03:21:08" hostname="DESKTOP-PB86ROL" time="0.003">
   <properties/>
-  <testcase name="givenManyNumbers_whenAddedToBST_shouldReturnHeightOfTree" classname="MyBinaryTreeTest" time="0.002"/>
+  <testcase name="givenManyNumbersWhenAddedToBSTWhenSearchANumbersThenShouldReturnTrue" classname="MyBinaryTreeTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
