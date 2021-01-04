@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-04T02:53:40" hostname="DESKTOP-PB86ROL" time="0.008">
-  <properties/>
-  <testcase name="givenALongParagraph_WhenWordsAreAddedToList_ThenDeleteAnOccuranceOfWord_ShouldRetur" classname="MyHashMapTest" time="0.008"/>
-  <system-out><![CDATA[MyHashMap@13f2932b
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
