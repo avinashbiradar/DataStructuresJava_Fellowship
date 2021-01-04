@@ -72,6 +72,7 @@ public class MyLinkedList<K> {
             return tempLastNode;
         }
     }
+
     //Method for search an element in Linked List
     public INode search(INode element) {
         if (this.head.equals(element))
@@ -82,6 +83,19 @@ public class MyLinkedList<K> {
             tempNode = tempNode.getNext();
             if (tempNode.equals(element))
                 return tempNode;
+        }
+        return null;
+    }
+    //Method To Search For a Specific Node By Key HashTable
+    public INode<K> search(K key) {
+        if(head==null)
+            return null;
+
+        INode<K> tempNode = this.head;
+        while (tempNode != null) {
+            if (tempNode.getKey().equals(key))
+                return tempNode;
+            tempNode =tempNode.getNext();
         }
         return null;
     }
