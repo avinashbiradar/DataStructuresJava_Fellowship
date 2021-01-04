@@ -10,7 +10,7 @@ public class MyLinkedList<K> {
         this.head=head;
         this.tail=tail;
     }
-
+    //Method to add elements from Back
     public void add(INode<K> newNode) {
         if(this.tail==null) {
             this.tail=newNode;
@@ -25,12 +25,10 @@ public class MyLinkedList<K> {
             this.head.setNext(tempNode);
         }
     }
+    //Method to add elements from front
     public void addElement(INode newNode) {
         if (this.head == null) {
             this.head = newNode;
-        }
-        if (this.tail == null) {
-            this.tail = newNode;
         }
         else {
             INode tempNode = this.head;
@@ -115,6 +113,25 @@ public class MyLinkedList<K> {
         tempDeleteNode.setNext(tempDeleteNode.getNext().getNext());
         return tempNode;
     }
+
+    public INode deleteAtIndex(K key) {
+        count--;
+        if(head==null)
+            return null;
+        if (head.getKey().equals(key)) {
+            INode<K> del = head;
+            head = head.getNext();
+            return del;
+        }
+        INode<K> deletedElement = head;
+        while (!deletedElement.getNext().getKey().equals(key)) {
+            deletedElement = deletedElement.getNext();
+        }
+        INode<K> tempNode = deletedElement.getNext();
+        deletedElement.setNext(deletedElement.getNext().getNext());
+        return tempNode;
+    }
+
     //Method for sorting Element in Linked List
     public void sorted(INode newNode) {
         count++;
